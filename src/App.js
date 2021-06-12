@@ -3,6 +3,7 @@ import { Link, Route, Switch } from 'react-router-dom';
 import Pokedex from './components/Pokedex';
 import PokemonDetails from './components/PokemonDetails';
 import About from './components/About';
+import NotFound from './components/NotFound';
 import pokemons from './data';
 import './App.css';
 
@@ -21,6 +22,7 @@ class App extends Component {
           <Route exact path="/about" render={ () => <About /> } />
           <Route exact path="/pokemons/:id" render={ (props) => <PokemonDetails { ...props } pokemons={ pokemons } /> } />
           <Route exact path="/" render={ () => <Pokedex pokemons={ pokemons } /> } />
+          <Route component={ NotFound } />
         </Switch>
       </div>
     );
