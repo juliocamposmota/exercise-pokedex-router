@@ -20,7 +20,7 @@ class PokemonDetails extends Component {
 
     return (
       <div>
-        <h1>{ pokemon.name } Details!</h1>
+        <h2>{ pokemon.name } Details!</h2>
 
         <img src={ pokemon.image } alt={ `The classic ${ pokemon.name }` } />
         <p>Id: { pokemon.id }</p>
