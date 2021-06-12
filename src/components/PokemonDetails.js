@@ -20,16 +20,16 @@ class PokemonDetails extends Component {
 
     return (
       <div>
-        <Link to="/">Home</Link>
         <h1>{ pokemon.name } Details!</h1>
-        <img src={ pokemon.image } />
+
+        <img src={ pokemon.image } alt={ `The classic ${ pokemon.name }` } />
         <p>Id: { pokemon.id }</p>
         <p>Type: { pokemon.type }</p>
         <p>Sumary: { pokemon.summary }</p>
         <p>{ pokemon.foundAt.map(({ location, map}) => (
           <div>
             <p>{ location }</p>
-            <img src={ map } />
+            <img src={ map } alt={ `The map of ${ location }` } />
           </div>
         )) }</p>
       </div>
