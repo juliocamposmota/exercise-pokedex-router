@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
-import Pokedex from './Pokedex';
+import Pokedex from './components/Pokedex';
 import pokemons from './data';
 import './App.css';
 
