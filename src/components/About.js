@@ -19,6 +19,8 @@ class About extends Component {
         <p>
           Sometimes the Pokédex might contain inaccurate or mythical information. For example, some of Tentacruel's entries describes it as having 80 tentacles when only 14 are visible.
         </p>
+
+        <img src="https://cdn2.bulbagarden.net/upload/thumb/3/37/RG_Pok%C3%A9dex.png/120px-RG_Pok%C3%A9dex.png" alt="Kanto Pokedex" />
       </div>
     );
   }
